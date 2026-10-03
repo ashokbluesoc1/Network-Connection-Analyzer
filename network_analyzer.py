@@ -9,7 +9,7 @@ for line in file:
     dest_ip = parts[2].strip().split("=")[1]
     dest_port = parts[3].strip().split("=")[1]
     protocol = parts[4].strip().split("=")[1]
-    connection = src_ip+" -> "+dest_ip
+    connection = (src_ip, dest_ip, dest_port)
     if connection in connection_count:
         connection_count[connection] += 1
     else:
