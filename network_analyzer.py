@@ -18,6 +18,7 @@ for line in file:
          print("⚠️  Connecetion to suspicious port ")
          print("Source IP:", src_ip)
          print("Destination IP:", dest_ip)
+         print("Destination port:", dest_port)
          print("Connection count:", connection_count[connection])
          print("Action : investigate communication")
     if connection_count[connection] == CONNECTION_THRESHOLD:
